@@ -5,36 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Juego Siigo</title>
 </head>
 <body>
 
     <div id="juego">
-        <table style="width:auto;">
-          <tr width="400" class="active">
-            <td width="200" id="0" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/avatar4.png" width="200" height="200">?</td>
-            <td width="200" id="1" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/avatar3.png" width="200" height="200">?</td>
-            <td width="200" id="2" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/avatar2.png" width="200" height="200">?</td>
-            <td width="200" id="3" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/avatar1.png" width="200" height="200">?</td>
+        <button id="buton"><a href="./TablaJugador.html">IR OTRA PAGINA</button></a>
+        <table id="tabla" style="width:auto;">
+          <tr width="400" id="tabla1" class="active">
+            <td width="200" id="0" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/programadores/avatar4.png" width="200" height="200">1</td>
+            <td width="200" id="1" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/programadores/avatar3.png" width="200" height="200">1</td>
+            <td width="200" id="2" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/programadores/avatar2.png" width="200" height="200">1</td>
+            <td width="200" id="3" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/programadores/avatar1.png" width="200" height="200">1</td>
+            
+        </tr>
+          <tr id="tabla2">
+            <td id="4" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/sitios/house.png" width="200" height="200">?</td>
+            <td id="5" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/sitios/company.png" width="200" height="200">?</td>
+            <td id="6" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/sitios/school.png" width="200" height="200">?</td>
+            <td id="7" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/sitios/edificio.png" width="200" height="200">?</td>
+          </tr>
+          <tr id="tabla3">
+            <td id="8" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/errores/errorCoding.png" width="200" height="200">?</td>
+            <td id="9" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/errores/stack.png" width="200" height="200">?</td>
+            <td id="10" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/errores/sintax.png" width="200" height="200">?</td>
+            <td id="11" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/errores/nullPointer.png" width="200" height="200">?</td>
           </tr>
           <tr>
-            <td id="4" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/house.png" width="200" height="200">?</td>
-            <td id="5" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/company.png" width="200" height="200">?</td>
-            <td id="6" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/house.png" width="200" height="200">?</td>
-            <td id="7" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-          </tr>
-          <tr>
-            <td id="8" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-            <td id="9" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-            <td id="10" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-            <td id="11" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-          </tr>
-          <tr>
-            <td id="12" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-            <td id="13" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-            <td id="14" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
-            <td id="15" class="letra" onclick="girarCarta()" data-valor="valor">?</td>
+            <td id="12" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/errores/404.png" width="200" height="200">?</td>
+            <td id="13" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/programadores/profile.png" width="200" height="200">?</td>
+            <td id="14" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/sitios/build.png" width="200" height="200">?</td>
+            <td id="15" class="letra" onclick="girarCarta()" data-valor="valor"><img src="./imagenes/programadores/women.png" width="200" height="200">?</td>
           </tr>
           </table>
       </div>
@@ -42,7 +44,7 @@
       <input type="button" value="Iniciar" onclick="iniciarJuego()" />  
       <input type="button" value="Reset" onclick="resetearJuego()" /> 
     </div>
-
+    <script src="./Logica/logica.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

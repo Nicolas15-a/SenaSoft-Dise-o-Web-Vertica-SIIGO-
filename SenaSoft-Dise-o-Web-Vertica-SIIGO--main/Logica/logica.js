@@ -15,8 +15,10 @@ var cartas = new Array(
   var identificadorJ2 = "";
   
   function iniciarJuego () {  
-    var dato = document.getElementById("juego");
-    dato.style.opacity = 1;
+    var dato = document.getElementById("tabla1");
+    dato.style.visibility = "hidden";
+    
+    
   
     cartas.sort(function() {return Math.random() - 0.5});
     for ( var i = 0 ; i < 16 ; i++ ) {
