@@ -1,55 +1,64 @@
-#juego {
-    opacity: 0.9;
-    max-width: 1000px;
-    margin: auto;
-    background: rgb(238, 238, 243);
-    padding-left: 49px;
-    padding-bottom: 30px;
-  }
-  
-  table {
-    
-    width: 100%;
-    height: 100%;
-  }
-  body{
-    background-color: rgb(92, 92, 212);
-  }
-  
-  td {
-    opacity: 0.8;
-    width: 25%;
-    height: 25%;
-    background-color: rgb(19, 17, 17);
-    border: 3px solid rgb(73, 156, 250);
-    border-radius: 5px;
-    margin-top: 200px;
-    padding-top: 50px;
-    padding-block-end:50px;
-  }
-  
-  .letra {
-    color: rgb(240, 239, 239);
-    font-size: 40px;
+
+
+.login{
+    max-width: 1200px;
     text-align: center;
-    font-style: italic;
-  }
-  
-  input {
-    width: 90px;
-    height: 30px;
-  }
-  
-  .centrar {
     margin: auto;
-    max-width: 1000px;
-    text-align:center;
-    padding-top: 20px;
-  }
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(3 auto);
+    grid-template-areas: "caja imagen"
+                         "caja imagen"
+                         "borbuja borbuja";
+}
 
+body{
+    background: rgb(92, 92, 212);
+    
+    font-family: cursive;
+}
 
-  /* Estilos Fondo */
-  .burbuja{
+h1{
+    font-size: 50px;
+}
+.login .caja{
+    color: white;
+    grid-area: caja;
+    margin-top: 250px;
+    font-size: 30px;
+}
+
+.login .imagen{
+    margin-top: 250px;
+    grid-area: imagen;
+   
+}
+
+div{
+    margin-bottom: 30px;
+}
+
+input{
+    border: none;
+    color: white;
+    border-bottom: solid 1px white;
+    width: 300px;
+    height: 40px;
+    background: rgb(92, 92, 212);
+}
+
+.imagen{
+    animation: movimiento 2.5s linear infinite;
+  
+}
+
+img{
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.burbuja{
     grid-area: borbuja;
     border-radius: 50%;
     background: #fff;
@@ -171,5 +180,17 @@
     100%{
         bottom: 100vh;
         opacity: 0;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .login{
+        grid-template-areas: "caja caja"
+                            "imagen imagen"
+                             "borbuja borbuja";
+    }
+
+    .imagen{
+        margin-left: 30px ;
     }
 }

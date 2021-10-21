@@ -110,3 +110,7 @@ var cartas = new Array(
           colorCambio(i, 'black', '?');
         }
       };
+
+
+     
+     

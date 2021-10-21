@@ -4,9 +4,9 @@ td{
     
 }
 
-#containerTabla{
+#tabla01{
     margin: auto;
-    padding-left:180px;
+    padding-left:auto;
     text-align:center;
     padding-top: 20px;
 }
@@ -32,4 +32,11 @@ tbody tr td{
     margin-right: auto;
     padding-left: 450px;
     
+}
+#containerTabla{
+    display:contents; 
+    margin:auto;
+    text-align: center;
+    grid-template-columns:(3 1fr);
+    grid-template-rows:(1 auto);
 }
