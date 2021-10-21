@@ -1,0 +1,23 @@
+{
+  "name": "senasoft-dise-o-web-vertica-siigo--main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas15-a/SenaSoft-Dise-o-Web-Vertica-SIIGO-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas15-a/SenaSoft-Dise-o-Web-Vertica-SIIGO-/issues"
+  },
+  "homepage": "https://github.com/Nicolas15-a/SenaSoft-Dise-o-Web-Vertica-SIIGO-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.3.1"
+  }
+}
