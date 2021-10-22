@@ -8,7 +8,8 @@ function iniciarJuego () {
     dato1.style.visibility = "hidden"
     dato2.style.visibility = "hidden"
     dato3.style.visibility = "hidden"
-    dato4.style.visibility = "hidden";}
+    dato4.style.visibility = "hidden"}
 
 
-
+const fichas={dato,dato1,dato2,dato3,dato4}
+console.log(fichas);
