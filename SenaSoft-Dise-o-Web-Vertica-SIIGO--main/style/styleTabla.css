@@ -43,3 +43,8 @@ tbody tr td{
     grid-template-columns:(3 1fr);
     grid-template-rows:(1 auto);
 }
+.preguntar{
+    background-color: rgb(24, 16, 16);
+    color: white;
+    font-size: xx-large;
+}
